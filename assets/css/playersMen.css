@@ -1,0 +1,1117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    height: 45px;
+    max-width: 1472px;
+
+}
+
+.SUB-HEADER {
+    display: flex;
+    margin: 8px 8px;
+    width: 100%;
+}
+
+.left-signin1 {
+    text-align: center;
+    display: block;
+    position: relative;
+
+
+}
+.text_signin .signin {
+    font-size: 16px;
+    padding: 5px 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.text_signin:hover
+{
+    cursor: pointer;
+}
+.text_signin
+{
+    padding: 9px 10px;
+}
+.signin-js
+{
+    position: fixed;
+    width: 100%;
+    top: 5.3%;
+    left: 5.5%;
+    z-index: 1;
+    display: none;
+}
+.text_signin:hover .signin-js
+{
+    display: block;
+}
+
+.subnav {
+ 
+    margin-top: 7px;
+    padding: 25px 40px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 0 0 15px 15px;
+    background-color: #555353;
+}
+
+.subnav .login {
+    width: 150px;
+    border-radius: 20px;
+    height: 50px;
+    margin: 5px 0px;
+    background-color: #231F20;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.subnav .signup {
+    width: 150px;
+    border-radius: 20px;
+    height: 50px;
+    margin: 5px 0px;
+    background-color: red;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+.nav li {
+    list-style-type: none;
+}
+.select-nn
+{
+    width: 120px;
+    font-size: 16px;
+    border-radius: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    text-align: center;
+    padding-top: 5px;
+}
+.logo-mu
+{
+    width: 50px;
+    margin: 0px 10px;
+}
+.logo-right
+{
+    position: absolute;
+    left: 80%;
+}
+#content
+{
+    width: 100%;
+    background-color: #c70101;
+}
+.logo-manunited
+{
+    width: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#content .content-nav
+{
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    
+}
+.content-nav li
+{
+    list-style-type: none;
+    padding: 40px 5px;
+    margin-top: -18px;
+}
+.content-nav
+{
+   margin-bottom: -20px;
+   
+}
+
+.content-nav li:hover
+{
+    text-decoration: 2px underline #fff;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 1.4em;
+    cursor: pointer;
+}
+
+.icon-search
+{
+    width: 30px;
+}
+.search-right-mu
+{
+    float: right;
+    display: flex;
+    margin-top: -50px;
+    margin-right: 15px;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.search-right-mu:hover
+{
+    text-decoration: 2px underline #fff;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 1.75em;
+    cursor: pointer;
+}
+.text-search
+{
+    margin-top: 5px;
+}
+#slider
+{
+    width: 100%;
+    background-color: #fff;
+}
+/* Latest */
+
+.slider-latest {
+    background-color: #f9f9f9;
+}
+
+.slider-latest .in-latest {
+    color: #464545;
+    font-size: 18px;
+}
+
+.list-latest {
+    display: flex;
+    font-size: 20px;
+    margin-left: 0.5%;
+}
+
+.list-latest li {
+    list-style-type: none;
+    margin: 0px 50px;
+    margin-bottom: -50px;
+    margin-top: -20px;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+.list-latest li:hover {
+    text-decoration: 1.5px underline #c70101;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.2em;
+    cursor: pointer;
+}
+
+.information-latest {
+    display: flex;
+    width: 100%;
+    margin-left: 35px;
+}
+
+.information-latest li {
+    list-style-type: none;
+    margin: 15px 15px;
+}
+
+.overlay2 {
+    position: absolute;
+    top:10.8%;
+    left: 0;
+    width: 100%;
+    color: #000;
+    z-index: 1;
+    display: none;
+}
+
+.latest:hover .overlay2 {
+    display: block;
+}
+
+/* MUTV */
+
+.slider-mutv .subnav-mutv
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    
+    
+}
+.slider-mutv a 
+{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+.slider-mutv li
+{
+    list-style-type: none;
+    margin: -7px 15px;
+}
+.slider-mutv li:hover
+{
+    text-decoration: 1px underline #c70101;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.2em;
+}
+.slider-mutv
+{
+    background-color: #f8f8f8;
+    width: 100%;
+}
+.overlay1
+{
+    position: fixed;
+    top: 15.4%;
+    left: 0;
+    width: 100%;
+    color: #000;
+    z-index: 1;
+    display: none;
+}
+.mutv:hover .overlay1
+{
+    display: block;
+}
+/* SHOP */
+.slider-shop
+{
+    width: 100%;
+    background-color: #f8f8f8;
+    color: #000;
+}
+.slider-shop .subnav-shop
+{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    text-wrap: nowrap;
+}
+.subnav-shop li
+{
+    list-style-type: none;
+    font-size: 18px;
+    margin-left: 55px;
+    margin-bottom: -30px;
+}
+.subnav-shop li:hover
+{
+    text-decoration: 1px underline #c70101;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.2em;
+}
+.trending
+{
+    margin: 0px 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+.div-shop
+{
+    width: 100%;
+    background: #fff;
+}
+.div-aq
+{
+    display: flex;
+}
+.mu-home
+{
+    width: 50%;
+    margin-left: 25%;
+}
+.gt-muhome
+{
+    text-align: center;
+    font-size: 18px;
+}
+.div-aq .btn-shopnow
+{
+    font-weight: 700;
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
+    border: 0.5px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+.btn-shopnow:hover
+{
+    opacity: 0.5;
+}
+.btn-shop-shirt
+{
+    text-align: center;
+    margin: 8px 0px;
+}
+.list-shirt
+{
+    margin: 15px 60px;
+    width: 28%;
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+}
+.overlay3
+{
+    position: fixed;
+    top: 15.4%;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.shop:hover .overlay3
+{
+    display: block;
+}
+/* FIXTURES */
+
+.slider-fixture
+{
+    width: 100%;
+    background-color: #ccc;
+}
+.subnav-fixture
+{
+    display: flex;
+}
+.subnav-fixture li
+{
+    list-style-type: none;
+    margin: 0px 65px ;
+    text-align: center;
+    font-weight: 500;
+    text-wrap: nowrap;
+    color: #000;
+    font-size: 18px;
+}
+.subnav-fixture li:hover
+{
+    text-decoration: 1px underline #c70101;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.3em;
+}
+.match-fixtures
+{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+}
+.match-score
+{
+    width: 28%;
+    border: 1px solid #f3ecec;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    color: #000;
+    margin: 7px 38px;
+}
+.match-score:hover
+{
+    background-color: #fff;
+    opacity: 0.8;
+}
+.premierleague-logo
+{
+    width: 50%;
+    margin-left: 25%;
+}
+.time-fixtures
+{
+    text-align: center;
+}
+.team_mu
+{
+    width: 20%;
+    margin-left: -5px;
+}
+.tiso
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 7px;
+}
+.teamvssocer
+{
+    display: flex;
+    margin: 10px 0px;
+    margin-left: 30%;
+}
+.introduction-team
+{
+    display: flex;
+    margin-left: 27%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.introduction-team .vs
+{
+    margin: 0px 10px;
+    padding: 4px 4px;
+    background-color: #ccc;
+    margin-top: -5px;
+}
+.overlay4
+{
+    position: absolute;
+    top: 15.4%;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.fixture:hover .overlay4
+{
+    display: block;
+}
+/* Fan */
+/* .slider-Fan
+{
+    width: 100%;
+    border: 1px solid #ccc;
+} */
+/* Players */
+
+
+/* content */
+.content-players
+{
+    width: 100%;
+}
+.content-players .list-players
+{
+    display: flex;
+    
+}
+.list-players li
+{
+  list-style-type: none;
+  margin: 15px 4%;
+  text-wrap: nowrap;
+  font-weight: 500;
+  color: rgb(104, 104, 104);
+}
+
+.list-players li{
+    text-decoration: none; /* Loại bỏ gạch chân mặc định */
+    position: relative; /* Đặt vị trí là tương đối */
+    display: inline-block; /* Hiển thị là khối nội dung inline */
+    color: black; /* Màu chữ */
+  }
+  
+.list-players li::after {
+    content: ""; /* Thêm nội dung giả */
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    bottom: -2px; /* Khoảng cách từ dưới của chữ */
+    left: 0; /* Bắt đầu từ bên trái */
+    width: 100%; /* Chiều rộng */
+    height: 1px; /* Độ dày của gạch chân */
+    background-color: #c70101; /* Màu của gạch chân */
+    transform-origin: left; /* Xác định điểm gốc cho hiệu ứng transform */
+    transform: scaleX(0); /* Bắt đầu với chiều rộng là 0 */
+    transition: transform 0.4s ease; /* Hiệu ứng chuyển động */
+  }
+  
+  .list-players li:hover::after 
+  {
+    transform: scaleX(1); /* Khi hover, mở rộng chiều rộng của gạch chân */
+  }
+  /* goal-keepers */
+.keepers
+{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,25%);
+}
+
+.players-men-cotent
+{
+    width: 100%;
+    background: #F8F8F8;
+}
+.goal-keepers
+{  
+    margin: 10px 15px;
+    font-size: 25px;
+}
+.hr-content-goal-keepers
+{
+    margin-left: 15px;
+    width: 95%;
+}
+.player-keepers
+{
+    width: 300px;
+    height: 327px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition:  transform 0.4s ease;
+}
+.goal-keepers-system
+{
+
+    margin: 10px 25px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.goal-keepers-system:hover .player-keepers
+{
+    transform: scale(1.08);
+    
+}
+/* defenders */
+.defenders-players
+{
+    width: 100%;
+}
+.defenders
+{
+ font-size: 25px;
+ margin: 10px 15px;
+}
+.img-defenders
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+.players-defenders
+{
+    width: 100%;
+    margin: 10px 25px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.players-defenders:hover .picture-defenders
+{
+  transform: scale(1.08);
+}
+.picture-defenders
+{
+    width: 300px;
+    height: 327px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition:  transform 0.4s ease;
+}
+
+/* mid */
+.text-midfielderms
+{
+    font-size: 25px;
+    margin: 10px 15px;
+}
+.midfielders-picture
+{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+.img-midfielders
+{
+    margin: 10px 25px;
+    padding-bottom: 25px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.img-midfielders
+{
+    width:100%;
+    margin: 10px 25px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+}
+.img-middefenders-content
+{
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+.img-midfielders:hover .img-middefenders-content
+{
+    transform: scale(1.08);
+}
+.img-middefenders-content
+{
+    width: 300px;
+    height: 327px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+/* forwards */
+.text-forwards
+{
+    font-size: 25px;
+    margin: 10px 15px ;
+}
+.forwards-picture
+{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+.img-forwards
+{
+    margin: 10px 25px;
+    padding-bottom: 25px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.img-forwards-content 
+{
+    width: 100%;
+    transition: transform 0.4s ease;
+    /* hiệu ứng chuyển đổi  */
+}
+  
+.img-forwards:hover .img-forwards-content 
+{
+    transform: scale(1.08);
+    /* phóng to bức ảnh lên khi di chuột vào 1.05=105% */
+}
+.img-forwards-content
+{
+    width: 300px;
+    height: 327px;
+    border-radius: 7px ;
+    cursor: pointer;
+}
+
+/* footer-player */
+.logo1
+{
+    width: 80px;
+    margin: 0px 15px;
+}
+.logo1-players
+{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+/* sub-nav-footer */
+.sub-nav-footter {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    background: #2a2a2a;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.icon-subnav {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #464545;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-subnav:hover {
+    background-color: #c70101;
+}
+
+.icon-subnav1 {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-subnav-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-subnav-footer .btn-login-footer {
+    font-size: 15px;
+    width: 104.83px;
+    height: 45px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #2a2a2a;
+    border: 0.05px solid #ccc;
+    margin-right: 8px;
+}
+
+.btn-subnav-footer .btn-login-footer:hover {
+    background-color: #1a1a1a;
+}
+
+.btn-subnav-footer .btn-signup-footer {
+    font-size: 15px;
+    width: 104.83px;
+    height: 45px;
+    border-radius: 15px;
+    background-color: #c70101;
+    color: #fff;
+    border: 1px solid #1a1a1a;
+    margin-left: 8px;
+}
+
+.btn-subnav-footer .btn-signup-footer:hover {
+    background-color: #ab0303;
+}
+/* chung */
+.image-caption 
+{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .number-shirt
+  {
+    text-decoration: underline solid #c70101;
+    font-size: 25px;
+    margin: 15px 5px;
+  }
+/* slider-players */
+.nav-players
+{
+    display: flex;
+}
+.nav-players li
+{
+    list-style-type: none;
+    color: #000;
+    margin: -20px 65px;
+    font-weight: 100;
+    font-size: 18px;
+}
+.meet-the-squads
+{
+    margin: 0px 23px;
+}
+.picture-men-players 
+{
+    width: 413.84px;
+    height: 310.44px;
+    margin: 10px 25px;
+    
+
+}
+.picture-women-players
+{
+    width: 413.84px;
+    height: 310.44px;
+    margin: 10px 25px;
+
+}
+.picture-players
+{
+    width: 413.84px;
+    height: 310.44px;
+}
+.picture-men-women
+{
+    display: flex;
+}
+.textplayers
+{
+ margin-top: -55px;
+ margin-left: 35px;
+ font-size: 25px;
+ padding-bottom: 55px; 
+ color: #fff;
+}
+.textplayers:hover
+{
+    text-decoration: underline 2px solid #c70101;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.2em;
+}
+
+.overlay {
+    position: absolute;
+    top: 10.8%;
+    left: 0;
+    width: 100%;
+    color: #000;
+    display: none;
+    background-color:#fff; /* Màu đỏ với độ trong suốt 70% */
+    z-index: 1; /* Đảm bảo overlay nằm trên cùng */
+}
+.overlay1 {
+    position: absolute;
+    top: 10.8%;
+    left: 0;
+    width: 100%;
+    color: #000;
+    display: none;
+    background-color:#fff; /* Màu đỏ với độ trong suốt 70% */
+    z-index: 1; /* Đảm bảo overlay nằm trên cùng */
+}
+.overlay3
+{
+    
+        position: absolute;
+        top: 10.8%;
+        left: 0;
+        width: 100%;
+        color: #000;
+        display: none;
+        background-color:#fff; /* Màu đỏ với độ trong suốt 70% */
+        z-index: 1; /* Đảm bảo overlay nằm trên cùng */
+}
+.overlay4
+{
+    position: absolute;
+    top: 10.8%;
+    left: 0;
+    width: 100%;
+    color: #000;
+    display: none;
+    background-color:#fff; /* Màu đỏ với độ trong suốt 70% */
+    z-index: 1; /* Đảm bảo overlay nằm trên cùng */
+}
+.overlay5
+{
+    position: absolute;
+    top: 10.8%;
+    left: 0;
+    width: 100%;
+    color: #000;
+    display: none;
+    background-color:#fff; /* Màu đỏ với độ trong suốt 70% */
+    z-index: 1; /* Đảm bảo overlay nằm trên cùng */
+}
+.overlay6
+{
+    position: absolute;
+    top: 10.8%;
+    left: 0;
+    width: 100%;
+    color: #000;
+    display: none;
+    background-color:#fff; /* Màu đỏ với độ trong suốt 70% */
+    z-index: 1; /* Đảm bảo overlay nằm trên cùng */
+}
+.overlay7
+{
+    position: absolute;
+    top: 10.8%;
+    left: 0;
+    width: 100%;
+    color: #000;
+    display: none;
+    background-color:#fff; /* Màu đỏ với độ trong suốt 70% */
+    z-index: 1; /* Đảm bảo overlay nằm trên cùng */
+}
+#players:hover .overlay
+{
+    display: block; /* Hiển thị overlay khi di chuột hoặc nhấp vào PLAYERS */
+}
+@media (min-width:740px) and (max-width:1024px)
+{
+   .SUB-HEADER
+   {
+    width: 100%;
+   }
+   .logo-right
+   {
+    display: flex;
+    margin-left: -150px;
+   }
+   .keepers, .img-defenders, .midfielders-picture, .forwards-picture
+   {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   }
+   .goal-keepers-system, .players-defenders, .img-midfielders,
+   .img-forwards
+   {
+    width: 100%;
+   }
+   .goal-keepers-system .player-keepers,
+   .players-defenders .picture-defenders,
+   .img-midfielders .img-middefenders-content,
+   .img-forwards .img-forwards-content
+   {
+    width: 90%;
+    object-fit: cover;
+   }
+   
+   
+}
+
+
+
+/* mobile  */
+ @media (min-width: 430px) and (max-width: 740px) {
+    body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #header {
+        height: auto;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .SUB-HEADER {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .left-signin1 {
+        margin-bottom: 10px;
+    }
+    .text_signin .signin {
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .text_signin {
+        padding: 5px 0;
+    }
+    .signin-js {
+        top: 10%;
+        left: 0;
+        width: 100%;
+    }
+    .subnav {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .subnav .login,
+    .subnav .signup {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .select-nn {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .logo-mu {
+        width: 30px;
+        margin: 0;
+    }
+    .logo-right {
+        position: static;
+        margin-top: 10px;
+    }
+    #content {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .logo-manunited {
+        width: 30px;
+        margin: 5px auto;
+    }
+    #content .content-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-nav li {
+        padding: 10px 0;
+        margin: 5px 0;
+    }
+    .icon-search {
+        width: 20px;
+    }
+    .search-right-mu {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .text-search {
+        margin-top: 5px;
+    }
+    .logo-right
+    {
+     display: flex;
+     text-align: center;
+    }
+    .content-players .list-players 
+    {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .nav-players
+    {
+        margin-left: 20px;
+    }
+    .nav-players li
+    {
+        margin: 0px 10px;
+    }
+    .select-men-women .meet-the-squads
+    {
+      margin-left: 30px;
+    }
+    .picture-men-women
+    {
+        width: 740px;
+    }
+    .picture-men-women .picture-players
+    {
+        width: 280px;
+        object-fit: cover;
+    }
+    .picture-men-players img
+    {
+     margin-left: 5px;
+    }
+    .picture-men-players .textplayers
+    {
+        margin-left: 10px;
+    }
+    .picture-women-players img
+    {
+        margin-left: -70px;
+    }
+    .picture-women-players .textplayers
+    {
+       margin-left: -65px;
+    }
+    .keepers, .img-defenders, .midfielders-picture, .forwards-picture
+    {
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2,50%);
+    }
+    .goal-keepers-system, .players-defenders, .img-midfielders,
+    .img-forwards
+    {
+     width: 100%;
+     margin-left: 10px;
+    }
+    .goal-keepers-system .player-keepers,
+    .players-defenders .picture-defenders,
+    .img-midfielders .img-middefenders-content,
+    .img-forwards .img-forwards-content
+    {
+     width: 200px;
+     height: 200px;
+     object-fit: cover;
+    }
+    .image-caption
+    {
+        position: absolute;
+        bottom: 25px;
+    }
+}

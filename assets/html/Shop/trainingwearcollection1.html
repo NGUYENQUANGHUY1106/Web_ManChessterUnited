@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/Shop/trainingwearcollection.css">
+</head>
+<body>
+    <div class="main">
+        <div id="header">
+            <div class="logo">
+                <img src="/assets/img/mu-fixtúe.png" alt="" class="logo_mu">
+                <p class="nameshopmu"><span class="mu">MAN UNITED</span> SHOP</p>
+            </div>
+            <div class="nav">
+                <ul class="subnav">
+                    <li class="kits">KITS
+                        <div class="overlay1">
+                            <ul class="sub_overlay1">
+                                <li>Home</li>
+                                <li>Away</li>
+                                <li>Third</li>
+                                <li>Goalkeeper</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="training">TRAINING
+                        <div class="overlay2">
+                            <ul class="sub_overlay2">
+                                <li>Men</li>
+                                <li>Women</li>
+                                <li>Kids</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="men">MEN
+                        <div class="overlay3">
+                            <ul class="sub_overlay3">
+                                <li>Jackets</li>
+                                <li>Retro</li>
+                                <li>Headwear</li>
+                                <li>Footwear</li>
+                                <li>Hoodies & Sweatshirts</li>
+                                <li>Football Kits</li>
+                                <li>Tops</li>
+                                <li>Traning</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="women">WOMEN
+                        <div class="overlay4">
+                            <ul class="sub_overlay4">
+                                <li>Babywear</li>
+                                <li>Retro</li>
+                                <li>Headwear</li>
+                                <li>Footwear</li>
+                                <li>Hoodies & Sweatshirts</li>
+                                <li>Dresses & Skirts</li>
+                                <li>Tops</li>
+                                <li>Traning</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="kids">KIDS
+                        <div class="overlay5">
+                            <ul class="sub_overlay5">
+                                <li>Jackets</li>
+                                <li>Retro</li>
+                                <li>Headwear</li>
+                                <li>Footwear</li>
+                                <li>Hoodies & Sweatshirts</li>
+                                <li>Football Kits</li>
+                                <li>Tops</li>
+                                <li>Traning</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="retro">RETRO
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <div id="content">
+           <div class="left_content">
+            <a style="text-decoration: none; color: #000;" href="/assets/html/Shop/mainShop.html">
+                <p class="your_selection">
+                    <B>
+                        Your Selections
+                    </B>
+                </p>
+                <div class="select_kit">
+                    <button class="delete">
+                        <img class="icon_delete" src="/assets/img/icons8-delete-30.png" alt="">
+                    </button>
+                    <p class="select_traning">Training</p>
+                </div>
+            </a>
+            <hr>
+
+            <div class="select_gender">
+                <p class="tieude">Gender/Age &#9660;</p>
+                 <div class="input_radio_gender hidden">
+                     <input type="radio" name="gender" id=""> Men
+                 </div>
+                 <div class="input_radio_gender hidden">
+                     <input type="radio" name="gender" id=""> Women
+                 </div>
+                 <div class="input_radio_gender hidden">
+                     <input type="radio" name="gender" id=""> Kids
+                 </div>
+            </div>
+            <hr>
+            <div class="popular_colletion">
+                <p class="tieude1" style="text-wrap: nowrap;">Popular Collection &#9660</p>
+                <div class="input_radio_popular hidden1">
+                    <input type="radio" name="" id=""> Hot New Arrivals
+                </div>             
+            </div>
+            <hr>
+             <div class="featured_Brands">
+                <p class="tieude2">Featured Brands &#9660</p>
+                <div class="input_radio_brands hidden2">
+                    <input type="radio" name="" id=""> Adidas
+                </div>
+             </div>
+           </div>
+            <div class="container">
+                <header>
+                    <h1>Your Shopping Cart</h1>
+                    <div class="shopping">
+                        <img src="/assets/image/icons8-add-shopping-cart-50.png">
+                        <span class="quantity">0</span>
+                    </div>
+                </header>
+            
+                <div class="list">  
+                </div>
+            </div>
+            <div class="card">
+                <h1>Card</h1>
+                <ul class="listCard">
+                </ul>
+                <div class="checkOut">
+                    <div class="total">0</div>
+                    <div class="closeShopping">Close</div>
+                </div>
+            </div>
+        
+        <!-- Checkout Modal -->
+        <div class="checkout-modal">
+            <div class="checkout-content">
+                <h2>Checkout</h2>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <div class="radio-group">
+                        <input type="radio" id="payment_cash" name="payment_method" value="cash"> 
+                        <p class="textpayment_bank">Cash</p>
+                        <input type="radio" id="payment_bank" name="payment_method" value="bank"> 
+                        <p class="textpayment_bank">Bank Transfer</p>
+                    </div>
+                </div>
+                <div id="banking_modal">
+                    <div class="qr-code">
+                        <img class="img_qr_code_nqh" src="/assets/img/qr_code.jpg" alt="QR Code">
+                    </div>
+                    <div class="upload_img">
+                        <input type="file" id="upload_image" name="upload_image" accept="image/*">
+                        <img id="uploaded_image" src="#" alt="Uploaded Image" style="display: none;">
+                    </div>
+                </div>
+                <button onclick="reg()" id="submit_checkout">Submit</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <script src="/assets/js/shop/trainingwearcolletion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      /* navbar-app__index */
+.header-app__index-icon{
+position: relative;
+color: var(--white-color);
+font-size: 2rem;
+right: 20px;
+cursor: pointer;
+}
+.header-app__index-icon:hover {
+    color:rgb(238, 77, 45) ;
+}
+.header-app__container-content{
+    position: fixed;
+    top:calc(70px);
+    right: 0;
+    width: 250px;
+    max-width: 100%;
+    z-index: 2;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform linear 0.3s,opacity linear 0.3s ;
+}
+.header-app__index__list{
+padding-left: 0;
+list-style: none;
+position: absolute;
+top: calc(100% - 10px);
+right: 0px;
+background-color: rgba(0, 0, 0, 0.8);
+box-shadow: 0 1px 2px #f0e9e9;
+border-radius: 2px;
+
+}
+.header__input-check:checked ~ .header-app__overlay {
+display: block;
+}
+.header__input-check:checked ~ .header-app__container-content{
+   transform: translateX(0%);
+  opacity: 1;
+}
+/* overlay */
+.header-app__overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+.navbar-app__index__item-link{
+ display: block;
+text-decoration: none;
+font-size: 2rem;
+font-weight: 500;
+color:var(--white-color);
+padding: 20px 80px 10px 30px;
+}
+.navbar-app__index__item-link:hover{
+     color:rgb(238, 77, 45) ;
+}
+   </style>
+</head>
+<body>
+   <label for="header-app-checkbox" class="header-app__index__container-img">
+      <i class=" header-app__index-icon fa-solid fa-bars"></i>
+      </label>
+    <input type="checkbox" name="" hidden class="header__input-check" id="header-app-checkbox">
+    <label for="header-app-checkbox"  class="header-app__overlay"></label>
+     
+        <div class="header-app__container-content"> 
+          <ul class="header-app__index__list">
+            <li class="navbar-app__index__item">
+            <a href="index.html" class="navbar-app__index__item-link">
+            Trang chủ
+            </a>
+            </li>
+            <li class="navbar-app__index__item">
+              <a href="food.html" class="navbar-app__index__item-link">
+              Món ăn
+              </a>
+            </li>
+            <li class="navbar-app__index__item">
+              <a href="drinks.html" class="navbar-app__index__item-link">
+                
+              Nước uống
+              </a>
+            </li>
+            <li class="navbar-app__index__item">
+              <a href="booking.html" class="navbar-app__index__item-link">
+              Đặt bàn
+              </a>
+            </li>
+            <li class="navbar-app__index__item">
+              <a href="Contact.html" class="navbar-app__index__item-link">
+            Liên hệ
+              </a>
+            </li>
+            <li class="navbar-app__index__item">
+              <a href="infor.html" class="navbar-app__index__item-link">
+            Giới thiệu
+              </a>
+            </li>
+          </ul>
+        </div>
+
+</body>
+</html>
