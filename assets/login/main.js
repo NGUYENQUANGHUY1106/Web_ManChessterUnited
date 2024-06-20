@@ -15,40 +15,6 @@ function showHiddenPass(passId, eyeId) {
    });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-   const loginForm = document.getElementById('login-form');
-   const loginMessage = document.getElementById('login-message');
-
-   loginForm.addEventListener('submit', function (event) {
-       event.preventDefault(); // Prevent the default form behavior
-
-       const email = document.getElementById('login-email').value;
-       const password = document.getElementById('login-pass').value;
-
-       console.log(`Email: ${email}, Password: ${password}`); 
-
-       if (email === 'nguyenquanghuy110605@gmail.com' && password === '11062005') {
-           console.log('Login successful'); 
-           Swal.fire({
-               position: 'center',
-               icon: 'success',
-               title: 'Logged in successfully',
-               showConfirmButton: false,
-               timer: 3000
-           }).then(() => {
-               window.location.href = '/assets/html/index.html'; 
-           });
-       } else {
-           console.log('Login failed'); 
-           Swal.fire({
-               icon: "error",
-               title: "Error...",
-               text: "Wrong password or email!",
-           });
-       }
-   });
-});
-
 showHiddenPass('login-pass', 'login-eye');
 
 var a = document.getElementById("loginBtn");

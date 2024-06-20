@@ -1,3 +1,7 @@
+<?php
+ include "class.login.php";
+ global $conn ;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,21 +21,21 @@
         <img src="/assets/login/img/anh-nen-manchester-united-dang-tap-luyen.webp" alt="login image" class="login__img">
 
         <!-- Login Form -->
-        <form action="" class="login__form" id="login-form">
+        <form action="login.php" method="POST" class="login__form" id="login-form">
             <h1 class="login__title">Login</h1>
 
             <div class="login__content">
                 <div class="login__box">
                     <i class="ri-user-3-line login__icon"></i>
                     <div class="login__box-input">
-                        <input type="email" required class="login__input" id="login-email" placeholder=" ">
+                        <input type="email" required class="login__input" id="login-email" name="email" placeholder=" ">
                         <label for="login-email" class="login__label">Email</label>
                     </div>
                 </div>
                 <div class="login__box">
                     <i class="ri-lock-2-line login__icon"></i>
                     <div class="login__box-input">
-                        <input type="password" required class="login__input" id="login-pass" placeholder=" ">
+                        <input type="password" required class="login__input" id="login-pass" name="password" placeholder=" ">
                         <label for="login-pass" class="login__label">Password</label>
                         <i class="ri-eye-off-line login__eye" id="login-eye"></i>
                     </div>
@@ -51,6 +55,23 @@
             <p class="login__register">
                 Don't have an account? <a href="#" id="register-link">Register</a>
             </p>
+            <!-- kết nối -->
+            <?php
+                 if($_POST)
+                 {
+                    $username = $_POST['email'];
+                    $user_pass = $_POST['password'];
+                    $result =mysqli_query($conn,"SELECT *from login where email = '$username' and password ='$user_pass'");
+                    $row = mysqli_fetch_assoc($result);
+                    if($row)
+                    {
+                        header( ("Location:index.html"));
+                    } else
+                    {
+                        echo '<p style= "color:red"> Tên đăng nhập hoặc mật khẩu không đúng!<p>';
+                    }
+                 }
+            ?>
         </form>
 
         <!-- Register Form -->
@@ -70,6 +91,13 @@
                     <div class="login__box-input">
                         <input type="email" required class="login__input" id="register-email" placeholder=" ">
                         <label for="register-email" class="login__label">Email</label>
+                    </div>
+                </div>
+                <div class="login__box">
+                    <i class="ri-mail-line login__icon"></i>
+                    <div class="login__box-input">
+                        <input type="email" required class="login__input" id="register-phone" placeholder=" ">
+                        <label for="register-phone" class="login__label">Phone Number</label>
                     </div>
                 </div>
                 <div class="login__box">
