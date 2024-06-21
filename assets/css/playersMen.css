@@ -525,6 +525,33 @@
   {
     transform: scaleX(1); /* Khi hover, mở rộng chiều rộng của gạch chân */
   }
+  .list-players .search
+  {
+    background-color: #ab0303;
+    color: yellowgreen;
+    width: 70px;
+    height: 30px;
+  }
+  .list-players .search_players_input
+  {
+    height: 30px;
+  }
+  .search_players {
+    margin-bottom: 20px;
+}
+.search_players_input {
+    padding: 5px;
+}
+.search {
+    padding: 5px 10px;
+}
+.goal-keepers-system, .players-defenders, .img-midfielders, .img-forwards {
+    display: inline-block;
+    margin: 10px;
+}
+.hidden {
+    display: none !important;
+}
   /* goal-keepers */
 .keepers
 {

@@ -84,3 +84,20 @@ document.addEventListener("DOMContentLoaded",function()
         overlay4.style.display ="none";
     });
 });
+// tìm kiếm 
+document.getElementById('search-button').addEventListener('click', function() {
+    var input = document.getElementById('search-input').value.toLowerCase().trim();
+    var players = document.querySelectorAll('.goal-keepers-system, .players-defenders, .img-midfielders, .img-forwards');
+    
+    players.forEach(function(player) {
+        var playerName = player.querySelector('.image-caption').textContent.toLowerCase().trim();
+        if (playerName.includes(input)) {
+            player.classList.remove('hidden');
+        } else {
+            player.classList.add('hidden');
+        }
+    });
+});
+
+
+
