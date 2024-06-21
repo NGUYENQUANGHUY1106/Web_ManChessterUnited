@@ -86,18 +86,20 @@ document.addEventListener("DOMContentLoaded",function()
 });
 // tìm kiếm 
 document.getElementById('search-button').addEventListener('click', function() {
-    var input = document.getElementById('search-input').value.toLowerCase().trim();
-    var players = document.querySelectorAll('.goal-keepers-system, .players-defenders, .img-midfielders, .img-forwards');
+    var input = document.getElementById('search-input').value.trim().toLowerCase();
+    var players = document.querySelectorAll('.goal-keepers-system, .players-defenders .players-defenders, .img-midfielders, .img-forwards');
     
     players.forEach(function(player) {
-        var playerName = player.querySelector('.image-caption').textContent.toLowerCase().trim();
+        var playerName = player.querySelector('.image-caption').textContent.trim().toLowerCase();
         if (playerName.includes(input)) {
-            player.classList.remove('hidden');
+            player.style.display = 'block';
         } else {
-            player.classList.add('hidden');
+            player.style.display = 'none';
         }
     });
 });
+
+
 
 
 
