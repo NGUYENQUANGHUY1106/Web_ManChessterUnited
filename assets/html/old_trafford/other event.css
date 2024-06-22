@@ -1158,11 +1158,6 @@
     }
 }
 @media (min-width: 0px) and (max-width: 740px) {
-    body {
-        padding: 0;
-        margin: 0;
-        overflow-x: hidden;
-    }
     #header {
         height: auto;
         text-align: center;
@@ -1214,6 +1209,14 @@
         width: 100%;
         padding: 10px 0;
     }
+    #content {
+        width: 100%;
+        padding: 10px 0;
+        background-color: #c70101;
+        position: relative; /* Thay đổi từ sticky sang relative */
+        top: auto; /* Loại bỏ top */
+        z-index: auto; /* Đặt z-index thành auto */
+    }
     .logo-manunited {
         width: 30px;
         margin: 5px auto;
@@ -1237,53 +1240,39 @@
     .text-search {
         margin-top: 5px;
     }
-    .banner {
-        max-height: 400px; /* Adjust height for smaller screens */
+    .grid-item{
+        height: 280px;
     }
-
-    .banner h2 {
-        top: 100px; /* Adjust top position for smaller screens */
-        left: 50%; /* Center the text */
-        transform: translateX(-50%);
-        font-size: 24px; /* Adjust font size for smaller screens */
+    .grid-item img{
+        height: 250px;
     }
-    .container-SCHOOL {
-        padding: 10px;
-        flex-direction: column;
-        align-items: flex-start;
+    .logo1-players {
+        width: 430px;
     }
-
-    .content-SCHOOL {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
+    .sub-nav-footter{
+        max-width: 430px;
+        
     }
-
-    .content-SCHOOL img {
-        max-width: 90%;
-        margin-right: 0;
-        margin-top: 0;
-        margin-bottom: 20px;
+    .grid-container{
+        max-width: 430px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    .text1 {
-        max-width: 90%;
-        margin-left: 0;
-        text-align: center;
+    .grid-item{
+        width: 400px;
+        grid-column: auto;
+        margin-left: -14px;
+        
     }
-
-    .text1 h2 {
-        font-size: 1.5em;
-        margin-bottom: 15px;
+    .icon-subnav{
+        width: 33pxpx;
+        height: 38px;
     }
-
-    .text1 p {
-        font-size: 1em;
-        margin-bottom: 15px;
+    .icon-subnav1{
+        width: 16px;
     }
-
-    .text1 a {
-        padding: 10px 20px;
-        font-size: 0.9em;
-    }
+    
 }

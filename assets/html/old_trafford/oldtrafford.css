@@ -1172,6 +1172,14 @@
         width: 100%;
         padding: 10px 0;
     }
+    #content {
+        width: 100%;
+        padding: 10px 0;
+        background-color: #c70101;
+        position: relative; /* Thay đổi từ sticky sang relative */
+        top: auto; /* Loại bỏ top */
+        z-index: auto; /* Đặt z-index thành auto */
+    }
     .logo-manunited {
         width: 30px;
         margin: 5px auto;

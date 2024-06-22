@@ -1239,11 +1239,6 @@
     
 }
 @media (min-width: 0px) and (max-width: 740px) {
-    body {
-        padding: 0;
-        margin: 0;
-        overflow-x: hidden;
-    }
     #header {
         height: auto;
         text-align: center;
@@ -1295,6 +1290,14 @@
         width: 100%;
         padding: 10px 0;
     }
+    #content {
+        width: 100%;
+        padding: 10px 0;
+        background-color: #c70101;
+        position: relative; /* Thay đổi từ sticky sang relative */
+        top: auto; /* Loại bỏ top */
+        z-index: auto; /* Đặt z-index thành auto */
+    }
     .logo-manunited {
         width: 30px;
         margin: 5px auto;
@@ -1318,36 +1321,40 @@
     .text-search {
         margin-top: 5px;
     }
-    .grid-container {
-        margin: 0 10px; /* Reduce margins for smaller screens */
-        padding: 20px 10px; /* Adjust padding for smaller screens */
-        grid-template-columns: 1fr; /* Single column layout */
-        grid-template-rows: auto; /* Auto row height */
+    .grid-item{
+        height: 280px;
     }
-
-    .grid-item img {
-        max-width: 100%;
+    .grid-item img{
+        height: 250px;
     }
-
-    .text-overlay {
-        top: 70%; /* Adjust top position */
-        left: 50%; /* Center align */
-        transform: translate(-50%, -50%);
-        width: 100%;
+    .logo1-players {
+        width: 430px;
     }
-
-    .text-overlay hr {
-        width: 50%; /* Adjust hr width for smaller screens */
+    .sub-nav-footter{
+        max-width: 430px;
+        
     }
-
-    .text-overlay h2 {
-        font-size: 1.2em; /* Adjust font size */
-        margin-left: 0; /* Center align */
+    .grid-container{
+        max-width: 430px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    .text-overlay h4, .text-overlay h3 {
-        font-size: 1em; /* Adjust font size */
-        margin-left: 0; /* Center align */
+    .grid-item{
+        width: 400px;
+        grid-column: auto;
+        margin-left: -14px;
+        
     }
+    .icon-subnav{
+        width: 33pxpx;
+        height: 38px;
+    }
+    .icon-subnav1{
+        width: 16px;
+    }
+    
 }
 
