@@ -56,125 +56,140 @@ let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
 
-openShopping.addEventListener('click', ()=>{
+openShopping.addEventListener('click', () => {
     body.classList.add('active');
 });
-closeShopping.addEventListener('click', ()=>{
+closeShopping.addEventListener('click', () => {
     body.classList.remove('active');
 });
 
 let products = [
-        {
-            id: 1,
-            name: 'Manchester Unied adidas Training T-Shirt -White',
-            image: '1.avif',
-            price: 874000
-        },
-        {
-            id: 2,
-            name: 'Manchester United adidas Training Jersey - Green',
-            image: '2.avif',
-            price: 713000
-        },
-        {
-            id: 3,
-            name: 'Manchester United adidas Training Pants - Black',
-            image: '3.avif',
-            price: 552000
-        },
-        {
-            id: 4,
-            name: 'Manchester United adidas Training Hoodie - Green',
-            image: '4.avif',
-            price: 874000
-        },
-        {
-            id: 5,
-            name: 'Manchester United adidas Pro Training Pants - Black',
-            image: '5.avif',
-            price: 506000
-        },
-        {
-            id: 6,
-            name: 'Manchester United adidas Training Jersey - Green  Kids',
-            image: '6.avif',
-            price: 644000
-        }
-        ,
-        {
-            id: 7,
-            name: 'Manchester Unied adidas Training T-Shirt -White',
-            image: '7.avif',
-            price: 874000
-        },
-        {
-            id: 8,
-            name: 'Manchester United Reversible Anthem Jacket - Black',
-            image: '8.avif',
-            price: 1380000
-        },
-        {
-            id: 9,
-            name: 'Manchester United adidas D4GMDY Travel Jacket - Green',
-            image: '9.avif',
-            price: 1196000
-        },
-        {
-            id: 10,
-            name: 'Manchester United adidas D4GMDY Travel Shorts  Black',
-            image: '32.avif',
-            price: 575000
-        },
-        {
-            id: 11,
-            name: 'Manchester United Golf Ripstop 9 Inch Golf Short - Olive Strata - Mens',
-            image: '33.avif',
-            price: 759000
-        },
-        {
-            id: 12,
-            name: 'Manchester United adidas Training Shorts - Black - Kids',
-            image: '34.avif',
-            price: 644000
-        }
-        ,
-        {
-            id: 13,
-            name: 'Manchester United adidas Golf Ultimate Adjustable Shorts - Black - Boys',
-            image: '35.avif',
-            price: 805000
-        },
-        {
-            id:14 ,
-            name: 'Manchester United adidas ALL SZN Shorts - Black - Mens',
-            image: '36.avif',
-            price: 690000
-        },
-        {
-            id: 15,
-            name: 'Manchester United adidas Z.N.E. Premium Tracksuit Bottoms - Black - Mens',
-            image: '37.avif',
-            price: 1140000
-        },
-        {
-            id: 16,
-            name: 'Manchester United adidas Originals Stone Roses Shorts  Black',
-            image: '38.avif',
-            price: 1265000
-        },
-        {
-            id: 17,
-            name: 'Manchester United Training Pants - Black - Womens',
-            image: '39.avif',
-            price: 1012000
-        },
-        {
-            id: 18,
-            name: 'Manchester United adidas Future Icons 3-Stripes Shorts - Black - Mens',
-            image: '40.avif',
-            price: 483000
-        }
-    
+    {
+        id: 1,
+        name: 'Manchester United adidas Training T-Shirt - White',
+        image: '1.avif',
+        price: 874000,
+        type: 't-shirt'
+    },
+    {
+        id: 2,
+        name: 'Manchester United adidas Training T-Shirt Jersey - Green',
+        image: '2.avif',
+        price: 713000,
+        type: 't-shirt'
+    },
+    {
+        id: 3,
+        name: 'Manchester United adidas Training Pants - Black',
+        image: '3.avif',
+        price: 552000,
+        type: 'pants'
+    },
+    {
+        id: 4,
+        name: 'Manchester United adidas Training Jacket - Green',
+        image: '4.avif',
+        price: 874000,
+        type: 'jacket'
+    },
+    {
+        id: 5,
+        name: 'Manchester United adidas Pro Training Pants - Black',
+        image: '5.avif',
+        price: 506000,
+        type: 'pants'
+    },
+    {
+        id: 6,
+        name: 'Manchester United adidas Training T-Shirt Jersey - White Kids',
+        image: '6.avif',
+        price: 644000,
+        type: 't-shirt'
+    },
+    {
+        id: 7,
+        name: 'Manchester United adidas Training T-Shirt - White',
+        image: '7.avif',
+        price: 874000,
+        type: 't-shirt'
+    },
+    {
+        id: 8,
+        name: 'Manchester United Reversible Anthem Jacket - Black',
+        image: '8.avif',
+        price: 1380000,
+        type: 'jacket'
+    },
+    {
+        id: 9,
+        name: 'Manchester United adidas D4GMDY Travel Jacket - Green',
+        image: '9.avif',
+        price: 1196000,
+        type: 'jacket'
+    },
+    {
+        id: 10,
+        name: 'Manchester United adidas D4GMDY Travel Shorts Black',
+        image: '32.avif',
+        price: 575000,
+        type: 'shorts'
+    },
+    {
+        id: 11,
+        name: 'Manchester United Golf Ripstop 9 Inch Golf Short - Olive Strata - Mens',
+        image: '33.avif',
+        price: 759000,
+        type: 'shorts'
+    },
+    {
+        id: 12,
+        name: 'Manchester United adidas Training Shorts - Black - Kids',
+        image: '34.avif',
+        price: 644000,
+        type: 'shorts'
+    },
+    {
+        id: 13,
+        name: 'Manchester United adidas Golf Ultimate Adjustable Shorts - Black - Boys',
+        image: '35.avif',
+        price: 805000,
+        type: 'shorts'
+    },
+    {
+        id: 14,
+        name: 'Manchester United adidas ALL SZN Shorts - Black - Mens',
+        image: '36.avif',
+        price: 690000,
+        type: 'shorts'
+    },
+    {
+        id: 15,
+        name: 'Manchester United adidas Z.N.E. Premium Tracksuit Bottoms Pants - Black - Mens',
+        image: '37.avif',
+        price: 1140000,
+        type: 'pants'
+    },
+    {
+        id: 16,
+        name: 'Manchester United adidas Originals Stone Roses Shorts Black',
+        image: '38.avif',
+        price: 1265000,
+        type: 'shorts'
+    },
+    {
+        id: 17,
+        name: 'Manchester United Training Pants - Black - Womens',
+        image: '39.avif',
+        price: 1012000,
+        type: 'pants'
+    },
+    {
+        id: 18,
+        name: 'Manchester United adidas Future Icons 3-Stripes Shorts - Black - Mens',
+        image: '40.avif',
+        price: 483000,
+        type: 'shorts'
+    }
 ];
 
 let productLinks = {
@@ -200,16 +215,43 @@ let productLinks = {
 
 let listCards = [];
 
+document.querySelectorAll('input[name="gender"]').forEach(radio => {
+    radio.addEventListener('change', filterProducts);
+});
+
+function filterProducts() {
+    let selectedType = document.querySelector('input[name="gender"]:checked').id.toLowerCase();
+    list.innerHTML = ''; // Xóa danh sách sản phẩm hiện tại
+
+    products.forEach((product, key) => {
+        // Kiểm tra nếu loại sản phẩm của sản phẩm hiện tại trùng với loại được chọn
+        if (product.type === selectedType) {
+            let newDiv = document.createElement('div');
+            newDiv.classList.add('item');
+            let productLink = productLinks[product.id];
+            newDiv.innerHTML = `
+                <a href="${productLink}"><img src="/assets/image/${product.image}" alt="${product.name}"></a>
+                <div class="title">${product.name}</div>
+                <div class="price">${product.price.toLocaleString()}</div>
+                <button onclick="addToCard(${key})">Add To Card</button>
+            `;
+            list.appendChild(newDiv);
+        }
+    });
+}
+
 function initApp() {
-    products.forEach((value, key) => {
+    // Load all products initially
+    products.forEach((product, key) => {
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
-        let productLink = productLinks[value.id];
+        let productLink = productLinks[product.id];
         newDiv.innerHTML = `
-            <a href="${productLink}"><img src="/assets/image/${value.image}" alt="${value.name}"></a>
-            <div class="title">${value.name}</div>
-            <div class="price">${value.price.toLocaleString()}</div>
-            <button onclick="addToCard(${key})">Add To Card</button>`;
+            <a href="${productLink}"><img src="/assets/image/${product.image}" alt="${product.name}"></a>
+            <div class="title">${product.name}</div>
+            <div class="price">${product.price.toLocaleString()}</div>
+            <button onclick="addToCard(${key})">Add To Card</button>
+        `;
         list.appendChild(newDiv);
     });
 }
@@ -228,36 +270,35 @@ function reloadCard() {
     listCard.innerHTML = '';
     let count = 0;
     let totalPrice = 0;
-    listCards.forEach((value, key) => {
-        totalPrice = totalPrice + value.price * value.quantity;
-        count = count + value.quantity;
-        if (value != null) {
-            let newDiv = document.createElement('li');
-            newDiv.innerHTML = `
-                <div><img src="/assets/image/${value.image}"/></div>
-                <div>${value.name}</div>
-                <div>${value.price.toLocaleString()}</div>
-                <div>
-                    <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
-                    <div class="count">${value.quantity}</div>
-                    <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
-                </div>`;
-            listCard.appendChild(newDiv);
-        }
+    listCards.forEach((product, key) => {
+        totalPrice += product.price * product.quantity;
+        count += product.quantity;
+        let newDiv = document.createElement('li');
+        newDiv.innerHTML = `
+            <div><img src="/assets/image/${product.image}"/></div>
+            <div>${product.name}</div>
+            <div>${(product.price * product.quantity).toLocaleString()}</div>
+            <div>
+                <button onclick="changeQuantity(${key}, ${product.quantity - 1})">-</button>
+                <div class="count">${product.quantity}</div>
+                <button onclick="changeQuantity(${key}, ${product.quantity + 1})">+</button>
+            </div>
+        `;
+        listCard.appendChild(newDiv);
     });
     total.innerText = totalPrice.toLocaleString();
     quantity.innerText = count;
 }
 
 function changeQuantity(key, quantity) {
-    if (quantity == 0) {
+    if (quantity === 0) {
         delete listCards[key];
     } else {
         listCards[key].quantity = quantity;
-        listCards[key].price = quantity * products[key].price;
     }
     reloadCard();
 }
+
 
 // check modal
 // Hiển thị modal khi nhấn vào tổng số tiền
@@ -337,5 +378,4 @@ function reg() {
 }
 
 
-// check input
 

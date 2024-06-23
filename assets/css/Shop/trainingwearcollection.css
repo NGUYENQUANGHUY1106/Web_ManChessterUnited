@@ -247,12 +247,24 @@
 {
     margin: 5px 5px;
 }
-.input_radio_popular:hover
-{
+.input_radio_popular:hover {
     background: #000;
-    color: #fff;
     cursor: pointer;
 }
+
+.input_radio_popular:hover .radio_link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.radio_link {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
 .tieude1
 {
     cursor: pointer;
