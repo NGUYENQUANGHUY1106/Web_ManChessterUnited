@@ -68,8 +68,6 @@
                     // Chỉnh đường dẫn tới file index.html
                     header("Location: /assets/html/index.html");
                     exit();
-                } else {
-                    echo '<p style="color:red">Tên đăng nhập hoặc mật khẩu không đúng!<p>';
                 }
             }
         ?>
